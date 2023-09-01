@@ -1,6 +1,6 @@
 .container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .card {
   top: 20px;
@@ -8,46 +8,86 @@
   border-width: 2px;
 }
 h1 {
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  color: #878787;
 }
 h2 {
-  font-weight: 300;
   font-size: 12px;
-  margin-left: 38px;
   padding: 0px 10px 0px 5px;
+  color: #878787;
+  font-weight: lighter;
 }
-h3 {
-  padding: 0px 10px 0px 10px;
-  font-size: 100px;
-  margin: 0px 2px 0px 0px;
-  text-align: right;
-  margin-top: -115px;
-  margin-right: -15px;
+ul {
+  margin: 0;
+  padding: 0;
 }
-h4 {
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+.weather-temperature {
+  float: right;
+  color: #878787;
+}
+.weather-temperature img {
+  margin-right: 5px;
+  height: 80px;
+  width: 80px;
+}
+.weather-temperature strong {
+  color: black;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 12px;
+  top: -34px;
+}
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+.measures {
   font-weight: 200;
   font-size: 10px;
   text-align: right;
-  margin-right: 8px;
-  margin-top: 20px;
-  margin: 0px 2px 2px 0px;
+  color: #878787;
+}
+
+small {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  opacity: 0.9;
+  color: #878787;
 }
 .unit {
-  font-size: 18px;
-}
-.time {
-  font-weight: 360;
   font-size: 18px;
 }
 .row {
   text-align: center;
   font-size: 10px;
+  color: #878787;
 }
 .day {
   font-size: 18px;
   text-align: center;
   padding: 0;
+  color: #878787;
+}
+.overview {
+  text-align: left;
 }
 .emoji {
   font-size: 40px;
@@ -58,8 +98,4 @@ form {
 }
 .searchbar {
   opacity: 0.5;
-}
-.link {
-  text-align: center;
-  display: block;
 }
