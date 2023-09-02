@@ -24,26 +24,28 @@
     <div class="container">
       <div class="card">
         <div class="card-body">
-          <h1>
-            <span id="city">Sydney</span>
-          </h1>
-
           <div class="row">
-            <div class="col-4 overview">
+            <div class="col-9">
+              <h1>
+                <span id="city">Sydney</span>
+              </h1>
+
               <ul>
                 <li id="description">Description</li>
-                <li>
-                  Last updated:
-                  <span id="date"></span>
+
+                <li class="measures">
+                  Precipitation:<span id="precipitation"></span>%
                 </li>
+                <li class="measures">Humidity:<span id="humidity"></span>%</li>
+                <li class="measures">Wind:<span id="wind"></span>km/h</li>
               </ul>
             </div>
-
-            <div class="col-8">
+            <div class="col-3">
               <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" />
+                <img src="" alt="Clear" id="icon" class="float-left image" />
+
                 <div class="float-left">
-                  <strong id="temperature"></strong
+                  <strong class="temp" id="temperature"></strong
                   ><span class="units"
                     ><a href="#" id="celsius-link" class="active">°C</a> |
                     <a href="#" id="fahrenheit-link">°F</a></span
@@ -51,49 +53,46 @@
                 </div>
               </div>
             </div>
-            <ul class="measures">
-              <li>Precipitation:<span id="precipitation"></span>%</li>
-              <li>Humidity:<span id="humidity"></span>%</li>
-              <li>Wind:<span id="wind"></span>km/h</li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-sm firstday">
-              <span class="day">Sun </span><br />
-              <span class="emoji">⛅ </span>
-              <br />
-              L:10°C &nbsp H:22°C
-            </div>
-            <div class="col-sm secondday">
-              <span class="day">Mon</span>
-              <br />
-              <span class="emoji">☀️</span>
-              <br />
-              L:16°C &nbsp H:26°C
-            </div>
-            <div class="col-sm thirdday">
-              <span class="day">Tues </span>
-              <br />
-              <span class="emoji">🌧️</span>
-              <br />
-              L:8°C &nbsp H:19°C
-            </div>
-            <div class="col-sm fourthday">
-              <span class="day">Wed</span>
-              <br />
-              <span class="emoji">⛈️ </span>
-              <br />
-              L:8°C &nbsp H:17°C
-            </div>
-            <div class="col-sm fifthday">
-              <span class="day">Thurs </span>
-              <br />
-              <span class="emoji">🌦️</span>
-              <br />
-              L:6°C &nbsp H:18°C
-            </div>
           </div>
 
+          <span class="forecast">
+            <div class="row">
+              <div class="col-sm firstday">
+                <span class="day">Sun </span><br />
+                <span class="emoji">⛅ </span>
+                <br />
+                L:10°C &nbsp H:22°C
+              </div>
+              <div class="col-sm secondday">
+                <span class="day">Mon</span>
+                <br />
+                <span class="emoji">☀️</span>
+                <br />
+                L:16°C &nbsp H:26°C
+              </div>
+              <div class="col-sm thirdday">
+                <span class="day">Tues </span>
+                <br />
+                <span class="emoji">🌧️</span>
+                <br />
+                L:8°C &nbsp H:19°C
+              </div>
+              <div class="col-sm fourthday">
+                <span class="day">Wed</span>
+                <br />
+                <span class="emoji">⛈️ </span>
+                <br />
+                L:8°C &nbsp H:17°C
+              </div>
+              <div class="col-sm fifthday">
+                <span class="day">Thurs </span>
+                <br />
+                <span class="emoji">🌦️</span>
+                <br />
+                L:6°C &nbsp H:18°C
+              </div>
+            </div>
+          </span>
           <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
@@ -115,6 +114,12 @@
               </div>
             </div>
           </form>
+          <ul>
+            <li class="date">
+              Last updated:
+              <span id="date"></span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
