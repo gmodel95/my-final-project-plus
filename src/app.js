@@ -87,3 +87,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Milan");
+
+console.log(apiUrl);
